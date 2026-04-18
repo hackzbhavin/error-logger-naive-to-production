@@ -148,14 +148,15 @@ The API cannot respond until MySQL finishes. At 200 VUs that means ~800ms per re
 docker compose up -d
 
 # Default load ramp
-k6 run -o experimental-prometheus-rw load-test.js
+k6 run -o experimental-prometheus-rw k6/load-test.js
 
 # Sudden spike
-k6 run --env SCENARIO=spike -o experimental-prometheus-rw load-test.js
+k6 run --env SCENARIO=spike -o experimental-prometheus-rw k6/load-test.js
 ```
 
 Open Grafana at `http://localhost:3000`
-
+username : admin
+password : same as username
 ***
 
 ## What This Taught Me

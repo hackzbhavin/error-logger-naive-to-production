@@ -1,0 +1,24 @@
+# Dependencies
+backend/node_modules/
+
+# Build output
+backend/dist/
+
+# Environment files
+# .env
+backend/.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# Docker volumes (local data)
+grafana/data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
