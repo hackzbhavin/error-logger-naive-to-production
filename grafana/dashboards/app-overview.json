@@ -170,7 +170,7 @@
       },
       "targets": [
         { "datasource": "Prometheus",
-          "expr": "100 * container_memory_usage_bytes{container_label_com_docker_compose_service=\"backend\",image!=\"\"} / container_spec_memory_limit_bytes{container_label_com_docker_compose_service=\"backend\",image!\"\"}",
+          "expr": "100 * container_memory_usage_bytes{container_label_com_docker_compose_service=\"backend\",image!=\"\"} / container_spec_memory_limit_bytes{container_label_com_docker_compose_service=\"backend\",image!=\"\"}",
           "legendFormat": "Memory %" }
       ]
     },
